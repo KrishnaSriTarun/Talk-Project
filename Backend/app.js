@@ -17,7 +17,7 @@ const Post = require("./models/posts");
 
 const PORT = 8080;
 const cors = require('cors');
-app.use(cors({ origin: 'http://localhost:5173', credentials: true, }));
+app.use(cors({ origin: 'https://talk-project-v7j5.vercel.app', credentials: true, }));
 
 // Routers
 const user = require('./routes/user');

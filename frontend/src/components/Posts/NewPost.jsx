@@ -28,7 +28,7 @@ function New() {
             if (video) formData.append('video', video);
 
             try {
-                  const response = await fetch('http://localhost:8080/talk', {
+                  const response = await fetch('https://talk-project.onrender.com/talk', {
                         method: 'POST',
                         body: formData,
                         credentials: 'include',

@@ -11,7 +11,7 @@ function Profile() {
       useEffect(() => {
             const fetchUser = async () => {
                   try {
-                        const response = await fetch("http://localhost:8080/currUser", {
+                        const response = await fetch("https://talk-project.onrender.com/currUser", {
                               method: "GET",
                               credentials: "include",
                         });

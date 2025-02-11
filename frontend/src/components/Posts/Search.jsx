@@ -12,7 +12,7 @@ function SearchBar() {
 
             if (value.trim().length >= 2) {
                   try {
-                        const response = await fetch(`http://localhost:8080/talk/search/users?query=${encodeURIComponent(value)}`);
+                        const response = await fetch(`https://talk-project.onrender.com/talk/search/users?query=${encodeURIComponent(value)}`);
                         const data = await response.json();
                         console.log('Fetched Users:', data);
                         setUsers(data);

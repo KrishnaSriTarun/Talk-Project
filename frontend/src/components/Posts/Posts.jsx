@@ -8,7 +8,7 @@ function TalkPosts() {
       useEffect(() => {
             const fetchPosts = async () => {
                   try {
-                        const response = await fetch("http://localhost:8080/talk");
+                        const response = await fetch("https://talk-project.onrender.com/talk");
                         if (!response.ok) {
                               throw new Error("Failed to fetch posts");
                         }

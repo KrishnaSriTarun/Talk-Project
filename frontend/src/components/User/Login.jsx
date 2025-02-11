@@ -32,7 +32,7 @@ export default function Authmodals() {
             };
 
             try {
-                  const response = await fetch("http://localhost:8080/login", {
+                  const response = await fetch("https://talk-project.onrender.com/login", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(data),
@@ -61,7 +61,7 @@ export default function Authmodals() {
             const formData = new FormData(signupFormRef.current);
 
             try {
-                  const response = await fetch("http://localhost:8080/signup", {
+                  const response = await fetch("https://talk-project.onrender.com/signup", {
                         method: "POST",
                         body: formData,
                   });

@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children }) => {
     useEffect(() => {
         const checkAuth = async () => {
             try {
-                const response = await fetch("http://localhost:8080/auth/check", {
+                const response = await fetch("https://talk-project.onrender.com/auth/check", {
                     credentials: "include", // Important! Ensures cookies are sent
                 });
 

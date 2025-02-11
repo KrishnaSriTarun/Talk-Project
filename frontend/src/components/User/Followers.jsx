@@ -10,7 +10,7 @@ const Followers = () => {
 
       const fetchFollowers = useCallback(async () => {
             try {
-                  const response = await fetch(`http://localhost:8080/user/followers/${id}`, {
+                  const response = await fetch(`https://talk-project.onrender.com/user/followers/${id}`, {
                         method: "GET",
                         credentials: "include",
                   });
